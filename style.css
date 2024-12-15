@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family:'Roboto', sans-serif;
+	line-height: 1.4;
+}
+
+p {
+	margin: 0.75rem 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.text-primary {
+	color: #93cb52;
+}
+
+#navbar {
+	position: sticky;
+	top: 0;
+	background-color: #333;
+	color: #fff;
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
+	z-index: 1;
+}
+
+#navbar ul {
+	display: flex;
+	list-style: none;
+	/*align-items:center; put the logo and li at the same level */
+	align-items: center;
+}
+
+#navbar ul li a {
+	color: #fff;
+	padding: 0.75rem;
+	margin: 0 0.25rem;
+}
+
+
+#navbar ul li a:hover {
+	background-color: #93cb52;
+	border-radius: 5px;
+}
+
+#showcase {
+	/* parent container */
+	position: relative;
+	background: url('./img/showcase.jpg') no-repeat center center/cover;
+	height: 100vh;
+	color: #fff;
+}
+
+#showcase .showcase-content {
+	display: flex;
+	flex-direction: column;
+	padding: 0 2rem;
+    text-align: center;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	/* overlay */
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.4);
+}
+
+.L-heading {
+	font-size: 4rem;
+	margin-bottom: 0.75rem;
+	line-height: 1.1;
+}
+
+.lead {
+	font-size: 1.3rem;
+	margin-bottom: 2rem;
+}
+
+.btn {
+	display: inline-block;
+	background-color: #93cb52;
+	padding: 0.5rem 2rem;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+}
+
+.btn:hover {
+	background-color: #7ab436 ;
+}
+
+.bg-light {
+	background-color: #f4f4f4;
+}
+
+.container {
+	margin: auto;
+	max-width: 1100px;
+	padding: 0 2rem;
+	overflow: hidden;
+}
+
+.py-1 {
+	padding: 1.5rem 0;
+}
+
+.m-heading {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1;
+}
+
+.text-center {
+	text-align: center;
+}
+
+#what .items .item i {
+	margin-bottom: 1rem;
+	padding: 1rem;
+	background-color: #93cb52;
+	border-radius: 50%;
+}
+
+#what .items {
+	display: flex;
+	padding: 1rem;
+}
+
+#what .items .item {
+	flex: 1;
+	text-align: center;
+	padding: 1rem;
+}
+
+#who {
+	display: flex;
+}
+
+#who div {
+	flex: 1;
+	flex-basis: 50%;
+}
+
+.bg-dark {
+	background-color: #333;
+	color: #fff;
+}
+
+.who-img {
+	background: url('./img/people.jpg') no-repeat center center/cover;
+}
+
+.p-2 {
+	padding: 2rem;
+}
+
+.list {
+	list-style: none;
+	margin: 0.5rem 0;
+}
+
+.list li {
+border-bottom:1px dotted #444;
+padding: 0.5rem;
+}
+
+#client .items {
+	display: flex;
+}
+
+#client .items img {
+	/* images are inline to move in center first make it block level element */
+	display: block;
+	margin: auto;/* Centers the block-level image horizontally */
+	width: 60%; /* Sets the image width to 60% of its container */
+}
+
+#contact {
+	display: flex;
+}
+
+#contact .contact-form,
+#contact .map {
+	flex: 1;
+	flex-basis: 50%;
+}
+
+#contact .map iframe {
+	height: 100%;
+	width: 100%;
+}
+
+.bg-primary {
+	background-color: #93cb52;
+	color: #fff;
+}
+
+.btn-dark {
+	background-color: #333;
+	color: #fff;
+}
+
+#contact .contact-form .form-group {
+	margin: 0.75rem;
+}
+
+#contact .contact-form label {
+	display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+	width: 100%;
+	padding: 0.5rem;
+}
